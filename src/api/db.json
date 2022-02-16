@@ -1,0 +1,40 @@
+{
+  "clientes": [
+    {
+      "id": 3,
+      "nombre": "Maira lll",
+      "correo": "maira@yahoo.com",
+      "ciudad": "Los Angeles"
+    },
+    {
+      "id": 4,
+      "nombre": "July",
+      "correo": "july@yahoo.com",
+      "ciudad": "Las vegas"
+    },
+    {
+      "id": 5,
+      "nombre": "Alberto",
+      "correo": "alberto@yahoo.com",
+      "ciudad": "Madrid"
+    },
+    {
+      "id": 6,
+      "nombre": "mauro",
+      "email": "mauromarvel@yahoo.com",
+      "ciudad": "españa"
+    },
+    {
+      "nombre": "mauro lopez",
+      "email": "mmmm@asaksasj.com",
+      "ciudad": "brasil",
+      "id": 1641209788756
+    },
+    {
+      "nombre": "mauro",
+      "correo": "mauroyahoo.com",
+      "ciudad": "espanña11111",
+      "id": 1643754619439
+    }
+  ]
+}
