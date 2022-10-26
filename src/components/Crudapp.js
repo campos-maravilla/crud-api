@@ -48,11 +48,10 @@ const Crudapp = () => {
     }
 
     return (
-        <div className="container-fluid col-lg-12 col-md-8 col-xs-4 ">
+        <div>
+            <h1 className="text-primary fs-4 text-center" >Aplicacón CRUD 2022</h1>
             <div className="row">
                 <div className="">
-
-                    {/*  <h1 className="text-primary">Practica #1</h1> */}
                     <CrudForm
                         createData={createData}
                         updateData={updateData}

@@ -8,7 +8,7 @@ const CrudRow = ({ el, setDataToEdit, deleteData }) => {
         <td>{correo}</td>
         <td>{ciudad}</td>
         <td>
-            <button className="btn btn-primary  "
+            <button className="btn btn-primary me-3"
                 onClick={() => setDataToEdit(el)} >Editar</button>
             <button className="btn btn-danger" onClick={() => deleteData(id)}>Eliminar</button></td>
     </tr >

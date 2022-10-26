@@ -1,87 +1,28 @@
-
+import { Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { ContactForm } from './components/ContactForm';
-import CrudApi from './components/CrudApi';
+
+import Menu from './components/Menu';
+import { Formulario } from './components/Formulario';
 
 import Crudapp from './components/Crudapp';
-import Pokemon from './components/Pokemon';
+
 
 
 function App() {
 
   return (
-    <div className="container text-center">
-      <h1>Ejercicios de React</h1>
+    <div className="container-fluid p-3 text-center d-flex flex-row ">
+      <Menu />
+      <div className='container justify-content-center align-items-center'>
+        <h1>Ejercicios de React</h1>
+        <Routes>
+          <Route path='/crudapp' element={<Crudapp />} />
 
-      <h1 className="text-primary fs-4 text-center" >APLICACIÓN CRUD 2021</h1>
-      <Crudapp />
-      <hr />
-      <Pokemon />
-      <hr />
-      <h2 className="text-primary fs-4 text-center">CONSUMIENDO API</h2>
-      {/*   <Pokemon /> */}
-      <hr />
-      <CrudApi />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+
+          <Route path='/formulario' element={<Formulario />} />
+          <Route path='*' element={<h2>Curso de React Practica de mauro</h2>} />
+        </Routes>
+      </div>
     </div>
   );
 }

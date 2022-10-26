@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-/* import { useForm } from '../hooks/useForm'; */
-import styles from './CrudForm.module.css';
 
 
 const initialForm = {
@@ -8,37 +6,6 @@ const initialForm = {
     correo: "",
     ciudad: "",
     id: null
-}
-
-const validationForm = (form) => {
-
-
-    let errors = {};
-
-    let regexNombre = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
-    let regexCorreo = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
-    let regexCiudad = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
-
-    if (!form.nombre.trim()) {
-        errors.nombre = "El campo 'Nombre' es requerido";
-
-    } else if (!regexNombre.test(form.nombre.trim())) {
-        errors.nombre = "Solo letras y espacios";
-    } else if (!regexCorreo.test(form.correo.trim())) {
-
-        errors.correo = "Debes escribir un correo valido";
-    } else if (!regexCiudad.test(form.ciudad.trim())) {
-        errors.ciudad = "Debes escribir solo letras";
-    }
-    if (!form.correo.trim()) {
-        errors.correo = "El campo 'Correo' es requerido";
-    }
-    if (!form.ciudad.trim()) {
-        errors.ciudad = "El campo 'Ciudad' es requerido";
-    }
-
-
-    return errors;
 }
 
 
@@ -51,18 +18,6 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
 
         }
     }, [dataToEdit])
-
-    /* const {
-        form,
-        errors,
-        loading,
-        response,
-        handleChange,
-
-        handleBlur
-    } = useForm(initialForm, validationForm);
-
- */
 
     const handleChange = (e) => {
         setForm({
@@ -94,10 +49,10 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
 
     return (
         <div>
-            <h3></h3>
-            <div className="container">
-                <form className="mt-2 p-2" onSubmit={handleSubmit} >
-                    <h1>Ingresa tus datos</h1>
+
+            <div className="container w-100">
+                <form onSubmit={handleSubmit} >
+                    <h3>Ingresa tus datos</h3>
                     <div className="mb-3" >
                         <input className="form-control"
                             type="text"
@@ -108,30 +63,28 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
 
                             onChange={handleChange}
                         />
-                        {/*  {errors.nombre && <p className={styles.error}>{errors.nombre}</p>} */}
                     </div>
                     <div>
 
                         <input
                             name="correo"
                             type="text"
-                            className="form-control"
+
                             id="correo"
-                            className="form-control"
                             placeholder="Introduce correo"
+                            className="form-control mb-3"
                             value={form.correo}
                             required
 
                             onChange={handleChange}
                         />
-                        {/*  {errors.correo && <p className={styles.error}>{errors.correo}</p>} */}
+
                     </div>
                     <div className="mb-3">
 
                         <input
                             type="text"
                             name="ciudad"
-                            className="form-control"
                             id="ciudad"
                             className="form-control"
                             value={form.ciudad}
@@ -140,7 +93,7 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
                             placeholder="Introduce ciudad"
                             onChange={handleChange}
                         />
-                        {/*   {errors.ciudad && <p className={styles.error}>{errors.ciudad}</p>} */}
+
                     </div>
 
 
