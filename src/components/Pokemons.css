@@ -1,0 +1,19 @@
+body {
+    background-color: #eaeaea;
+}
+
+
+.figura {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.figura h2 {
+    grid-column: span 4;
+}
+
+.figura h3 {
+    grid-column: span 4;
+    text-align: center;
+}

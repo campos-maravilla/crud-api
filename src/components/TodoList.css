@@ -1,0 +1,5 @@
+.todo-completed{
+    background-color: #cdcdcd;
+    text-decoration: line-through;
+    border-radius: 10px;
+}

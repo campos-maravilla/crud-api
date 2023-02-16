@@ -1,0 +1,6 @@
+.dark{
+    background-color: #eee;
+    /* background-color: #121111; */
+   filter: invert(1); 
+/* color: #f4f4f4; */
+}

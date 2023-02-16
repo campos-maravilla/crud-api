@@ -8,7 +8,7 @@ const CrudTable = ({ data, setDataToEdit, deleteData }) => {
 
         <div>
             <h3 className="text-center">Tabla de datos</h3>
-            <table className="table table-success table-striped table table-hover " >
+            <table className="table table-success table-striped table table-hover w-75 m-auto " >
                 <thead>
 
 

@@ -21,7 +21,7 @@ const useForm = (initialData, onValidate) => {
             /* } else {
                 setErrors(err) */
             setLoading(true)
-            fetch("https://formsubmit.co/ajax/mauromj35@gmailmmmm.com", {
+            fetch("https://formsubmit.co/ajax/mauromj35@gmail.com", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',

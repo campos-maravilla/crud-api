@@ -51,7 +51,7 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
         <div>
 
             <div className="container w-100">
-                <form onSubmit={handleSubmit} >
+                <form onSubmit={handleSubmit} className='w-75 m-auto'>
                     <h3>Ingresa tus datos</h3>
                     <div className="mb-3" >
                         <input className="form-control"

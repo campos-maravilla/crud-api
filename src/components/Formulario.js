@@ -57,8 +57,8 @@ export const Formulario = () => {
     return (
         <div className="container w-100">
             <h1 className="text-primary fs-4 text-center" >Validación de formulario</h1>
-            <h3>Ingresar  datos</h3>
-            <form onSubmit={handleSubmit}>
+            <h3 className="text-center">Ingresar  datos</h3>
+            <form onSubmit={handleSubmit} className='w-75 m-auto'>
 
                 <div className="mb-3" >
                     <input className="form-control"
